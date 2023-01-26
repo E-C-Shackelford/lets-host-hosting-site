@@ -13,7 +13,6 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
-  background-color: rgba(144, 225, 252, 0.4);
   background-color: rgba(217, 217, 211, 0.95);
 }
 
@@ -132,4 +131,165 @@ body {
   bottom: 37px;
   right: 115px;
   animation: moveInRight 3s;
+}
+
+.plans__heading {
+  margin: 150px 0;
+  background-color: #fff;
+  border-top: 2px solid #2ddf5c;
+  border-bottom: 2px solid #2ddf5c;
+}
+
+.plans__heading h2 {
+  text-align: center;
+  color: #7c7979;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 50px 0;
+}
+
+.plans-wrapper {
+  margin: 20px auto;
+  display: flex;
+}
+
+.plan {
+  flex: 1;
+  background-color: rgba(30, 153, 63, 0.9);
+  margin: 20px;
+  padding: 80px 20px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 2;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.plan:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.plan--highlighted {
+  background-color: #4abefc;
+}
+
+.plan > * {
+  flex: 1 1 100%;
+  color: #fff;
+}
+
+.plan__name {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.plan__price {
+  font-size: 2.4rem;
+}
+
+.plan__description {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.plan__btn:link,
+.plan__btn:visited,
+.plan__btn--recommended:link,
+.plan__btn--recommended:visited {
+  background-color: #fff;
+  font-size: 1.6rem;
+  color: #575555;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.plan__btn:hover,
+.plan__btn:active {
+  color: #14aefe;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.plan__btn--recommended:hover,
+.plan__btn--recommended:active {
+  color: rgba(30, 153, 63, 0.9);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.plan__subtitle {
+  background-color: #4abefc;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan__subtitle::after {
+  content: "Recommended";
+  position: absolute;
+  top: 9%;
+  right: -15%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #ffd84c;
+  color: #444;
+  padding: 8px 60px;
+  transform: rotate(45deg);
+  transition: all 0.3s;
+}
+
+.core-features {
+  background-color: rgba(215, 213, 207, 0.4);
+  margin-top: 200px;
+  padding: 200px 40px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border-bottom: 1px solid #444;
+}
+
+.core-features__heading {
+  flex: 1;
+}
+
+.core-features__heading h2 {
+  font-size: 3.5rem;
+  color: #554f4f;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.core-features__list {
+  flex: 2;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.core-features__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+
+.core-features__icon {
+  width: 50px;
+  height: 50px;
+  color: #10722a;
+  margin-bottom: 20px;
+}
+
+.core-features__item p {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.5;
 }
