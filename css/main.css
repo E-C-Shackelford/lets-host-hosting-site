@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(144, 225, 252, 0.4);
+  background-color: rgba(217, 217, 211, 0.95);
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.main-nav {
+  display: flex;
+  background-color: #2ddf5c;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.logo-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.logo__sub {
+  font-size: 1.2rem;
+  display: block;
+}
+
+.main-nav__list {
+  flex: 2;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__item {
+  padding: 10px;
+}
+
+.main-nav__link:link,
+.main-nav__link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 4px 8px;
+  transition: all 0.4s;
+}
+
+.main-nav__link:hover,
+.main-nav__link:active {
+  color: #10722a;
+  font-weight: 700;
+  border: 2px solid #fff;
+}
+
+.main-nav__link--cta:link,
+.main-nav__link--cta:visited {
+  background-color: #10722a;
+  border: 2px solid #10722a;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.main-nav__link--cta:hover,
+.main-nav__link--cta:active {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #10722a;
+}
+
+.hero-image {
+  background: url("../img/web-dev-team.jpg");
+  background-size: cover;
+  background-position: start;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.hero-image__heading {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-size: 3.2rem;
+  position: absolute;
+  bottom: 37px;
+  right: 115px;
+  animation: moveInRight 3s;
+}
