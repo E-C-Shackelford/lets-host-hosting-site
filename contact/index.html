@@ -80,7 +80,93 @@
         </nav>
       </header>
 
-      <main></main>
+      <main>
+        <div class="contact-wrapper">
+          <div class="contact-heading-wrapper">
+            <h1 class="contact-heading--primary">Contact us today</h1>
+            <h2 class="contact-heading--secondary">
+              Our support team is here for you, 24/7
+            </h2>
+          </div>
+          <p class="contact-detail">
+            Give us a call, reach out via live chat, or submit a support ticket
+            with your questions and concerns.
+          </p>
+          <p class="contact-detail">We're happy to help!</p>
+
+          <div class="contact-channels">
+            <div class="call-wrapper">
+              <h2 class="contact-channels__heading">Call us</h2>
+              <i class="fa-solid fa-phone contact-channels__icon"></i>
+            </div>
+            <div class="chat-wrapper">
+              <h2 class="contact-channels__heading">Chat with us</h2>
+              <i class="fa-regular fa-comments contact-channels__icon"></i>
+            </div>
+            <div class="open-ticket-wrapper">
+              <h2 class="contact-channels__heading">Open a support ticket</h2>
+              <i class="fa-solid fa-ticket contact-channels__icon"></i>
+            </div>
+          </div>
+
+          <div class="ticket-wrapper">
+            <h2 class="ticket-heading">Open a support ticket</h2>
+            <form action="">
+              <div class="name-wrapper">
+                <label for="name" class="name-label">Name:</label>
+                <input type="text" name="name" id="name" class="name-field" />
+              </div>
+              <div class="email-wrapper">
+                <label for="email" class="email-label">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="email-field"
+                />
+              </div>
+              <div class="subject-wrapper">
+                <label for="subject" class="subject-label">Subject:</label>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  class="subject-field"
+                />
+              </div>
+
+              <div class="message-wrapper">
+                <label for="message" class="message-label">Message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="64"
+                  rows="10"
+                  class="message-field"
+                ></textarea>
+              </div>
+
+              <div class="select-wrapper">
+                <label for="issue-priority" class="priority-label"
+                  >Priority:</label
+                >
+                <select
+                  name="priority"
+                  id="issue-priority"
+                  class="priority-selection"
+                >
+                  <option value="low">Low</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="high">High</option>
+                </select>
+              </div>
+
+              <button class="form-btn--submit">Submit</button>
+              <button class="form-btn--cancel">Cancel</button>
+            </form>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
