@@ -62,6 +62,7 @@
 .contact-channels__heading {
   font-weight: 500;
   color: #222;
+  text-decoration: none;
 }
 
 .contact-channels__icon {
