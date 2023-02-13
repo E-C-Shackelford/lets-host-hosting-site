@@ -1,0 +1,63 @@
+.domain-wrapper {
+  text-align: center;
+}
+
+.domain-heading-wrapper {
+  margin: 180px 0 80px 0;
+}
+
+.domain-heading {
+  margin-bottom: 40px;
+}
+
+.domain-heading--primary {
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.domain-heading--secondary {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #10722a;
+}
+
+.domain-field,
+.domain-btn,
+.domain-selection {
+  padding: 10px 20px;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+.domain-field,
+.domain-selection {
+  border: 2px solid #4abefc;
+  margin-right: 6px;
+}
+
+.domain-field {
+  width: 600px;
+}
+
+.domain-selection {
+  color: #444;
+}
+
+.domain-field:focus,
+.domain-selection:focus {
+  outline: 2px solid #2ddf5c;
+  outline-offset: 2px;
+}
+
+.domain-btn {
+  background-color: #4abefc;
+  border: 2px solid #4abefc;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.domain-btn:hover {
+  background-color: #2ddf5c;
+  border: 2px solid #2ddf5c;
+}
