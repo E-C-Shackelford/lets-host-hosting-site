@@ -1,4 +1,4 @@
-.domain-wrapper {
+.domain-search {
   text-align: center;
 }
 
@@ -10,13 +10,13 @@
   margin-bottom: 40px;
 }
 
-.domain-heading--primary {
+.domain-heading__primary {
   font-size: 3.8rem;
   font-weight: 600;
   color: #444;
 }
 
-.domain-heading--secondary {
+.domain-heading__secondary {
   font-size: 2.8rem;
   font-weight: 400;
   color: #10722a;
@@ -54,10 +54,58 @@
   background-color: #4abefc;
   border: 2px solid #4abefc;
   color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 2px rgb(51, 51, 51);
   transition: all 0.3s;
 }
 
 .domain-btn:hover {
-  background-color: #2ddf5c;
-  border: 2px solid #2ddf5c;
+  background-color: #109bf1;
+  border: 2px solid #109bf1;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.domain-transfer {
+  margin: 180px 0;
+  background-color: rgba(74, 190, 252, 0.15);
+  padding: 100px 0;
+  border-top: 1px solid #109bf1;
+  border-bottom: 1px solid #109bf1;
+}
+
+.transfer-wrapper {
+  text-align: center;
+}
+
+.domain-heading__secondary--transfer {
+  font-weight: 600;
+  color: #10722a;
+  font-size: 3rem;
+}
+
+.domain-heading__tertiary {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.transfer-btn {
+  background-color: #fff;
+  border: 2px solid #10722a;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-size: 2rem;
+  color: #0d6825;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  transition: all 0.2s;
+}
+
+.transfer-btn:hover {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  background-color: #10722a;
+  color: #fff;
 }
