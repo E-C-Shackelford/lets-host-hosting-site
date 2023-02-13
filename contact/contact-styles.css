@@ -118,6 +118,16 @@ form {
   border: 1px solid #585656;
   color: #444;
   font-size: 1.6rem;
+  border-radius: 4px;
+}
+
+.name-field:focus,
+.email-field:focus,
+.subject-field:focus,
+.message-field:focus,
+.priority-selection:focus {
+  outline: 2px solid #0f832e;
+  outline-offset: 2px;
 }
 
 .message-label {
@@ -142,6 +152,8 @@ form {
   font-size: 1.5rem;
   padding: 5px;
   color: #444;
+  border: 1px solid #585656;
+  border-radius: 4px;
 }
 
 .form-btn--submit,

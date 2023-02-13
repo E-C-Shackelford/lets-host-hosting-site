@@ -257,10 +257,23 @@
           <form action="" class="search-wrapper">
             <input
               type="text"
-              placeholder="Search a domain"
+              placeholder="Search a domain..."
               required
               class="search-field"
             />
+            <select
+              name="domain-options"
+              id="domain-select"
+              class="domain-selection--main"
+            >
+              <option value=".com" selected>.com</option>
+              <option value=".net">.net</option>
+              <option value=".org">.org</option>
+              <option value=".info">.info</option>
+              <option value=".biz">.biz</option>
+              <option value=".me">.me</option>
+              <option value=".us">.us</option>
+            </select>
             <input type="submit" value="Search" class="submit-btn" />
           </form>
         </section>
